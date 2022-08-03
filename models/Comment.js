@@ -10,14 +10,7 @@ Comment.init({
         primaryKey: true,
         autoIncrement: true,
     },
-    user: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-            model: 'user',
-            key: 'id'
-        }
-    },
+
     comment: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -25,21 +18,9 @@ Comment.init({
             len: [1]
         },
     },
-    post: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-            model: 'post',
-            key: 'id'
-        }
-    }
+
 }, {
-    hooks: {
-        beforeCreate: async(newCommentData) => {
-            newCommentData.password = await bcrypt.hash(newCommentData.password, 10);
-            return newCommentData;
-        },
-    },
+
     sequelize,
     timestamps: false,
     freezeTableName: true,
