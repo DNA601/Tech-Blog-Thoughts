@@ -7,7 +7,7 @@ const Post = require('./Post');
 Post.belongsTo(User, { foreignKey: "userId", onDelete: "cascade" });
 
 // Categories have many Products
-Post.hasMany(Comment, { foreignKey: "postId" });
+Post.hasMany(Comment, { foreignKey: "post-id" });
 // Products belongToMany Tags (through ProductTag)
 Comment.belongsTo(User, { foreignKey: "userId" })
 
