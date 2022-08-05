@@ -19,7 +19,6 @@ JS, HEROKU, NODE, TERMINAL, Express.js, MYSQL, handlebars.
 ## Description
 This here is a blog page with only a sign up page. 
 At the homepage the user is presented the option to log in and sign up.
-WHEN I click on the homepage option
 The user will be instructed  to create a username and password as well as add an email.
 Once they click on the sign-up button the user's credentials are saved and they log onto the site.
 Users can revisit the site with an option to sign in with their username and password
