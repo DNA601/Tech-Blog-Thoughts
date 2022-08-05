@@ -27,7 +27,7 @@ The user will be able to see navigation links for the homepage, the dashboard, a
 
 ## App-link
 
-https://fierce-river-33037.herokuapp.com/login
+https://fierce-river-33037.herokuapp.com/
 
 ## github
 
